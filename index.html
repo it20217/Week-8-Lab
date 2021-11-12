@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <title>Rock-Paper-Scissors Game</title>
+</head>
+<body>
+  <div class="game-container">
+    <div id="message"></div>
+    <div class="results">
+      <div id="playerResult"></div>
+      <div id="computerResult"></div>
+    </div>
+    
+      <div class="score-board">
+        <div class="score-box">
+          <div style="color: #45d492">
+            <h3>Player:</h3>
+          </div>
+          <div id="playerScore"></div>
+        </div>
+        <div class="score-box">
+          <div style="color: #e44d61">
+            <h3>Computer:</h3>
+          </div>
+          <div id="computerScore"></div>
+        </div>
+      </div>
+
+    <div class="select-container">
+      <div>
+        <h2>Choose option:</h2>
+      </div>
+      <div class="button-container">
+        <button type="button" id="rock" class="box" onclick=setRock()>
+          <img src="https://img.icons8.com/ios/100/000000/hand-rock.png"/>
+        </button>
+        <button type="button" id="paper" class="box" onclick=setPaper()>
+          <img src="https://img.icons8.com/ios/100/000000/hand.png"/>
+        </button>
+        <button type="button" id="scissors" class="box" onclick=setScissors()>
+          <img src="https://img.icons8.com/ios/100/000000/hand-scissors--v1.png"/>
+        </button>
+      </div>
+      <div>
+        <button class="resetBtn" type="button" onclick=reset()>Reset</button>
+      </div>
+    </div>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
